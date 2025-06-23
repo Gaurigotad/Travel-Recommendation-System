@@ -1,41 +1,72 @@
-# 🌍 Travel Recommendation System
+# Travel-Recommendation-System
+A machine learning-based web application that suggests travel destinations based on user preferences. This system enhances the travel experience by providing personalized recommendations using various parameters like location type, climate, budget, and interests.
 
-A personalized **Travel Recommendation System** built using **Python**, **Streamlit**, **pandas**, **scikit-learn**, and **natural language processing**. This intelligent system suggests destinations based on user preferences and similarities in travel descriptions.
+## 🔍 Features
 
-## 🎯 Features
+- ✅ Personalized travel destination suggestions
+- ✅ User-friendly interface built with Streamlit
+- ✅ Data visualization of recommendations
+- ✅ Machine learning model using content-based filtering
+- ✅ Easy to modify and extend for more use-cases
 
-- 🔍 Destination recommendation using **Cosine Similarity**
-- 🧠 NLP-based comparison of travel preferences
-- 📊 Visualization using **Matplotlib** and **Seaborn**
-- 📄 Interactive UI with **Streamlit**
-- 🗃 Customizable input options (text, category, etc.)
+## 📌 How It Works
 
----
+1. Users input preferences (e.g., type of place, climate, activity).
+2. The system processes input using a content-based recommendation engine.
+3. Top recommended destinations are displayed along with key features.
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-| Frontend   | Backend     | Machine Learning / NLP | Visualization |
-|------------|-------------|-------------------------|----------------|
-| Streamlit  | Python      | Scikit-learn, CountVectorizer | Matplotlib, Seaborn |
-| HTML (auto-generated) | | pandas, NumPy            |                 |
+| Technology     | Purpose                         |
+|----------------|----------------------------------|
+| Python         | Core logic and backend          |
+| Streamlit      | Web interface                   |
+| Pandas & NumPy | Data handling and processing    |
+| Scikit-learn   | Model building                  |
+| Seaborn & Matplotlib | Data visualization        |
+| Pickle         | Model saving and loading        |
 
----
+## 📷 Screenshots
+> ![App Screenshot](IMAGES/homepage.png)
 
-## 🚀 How to Run the Project Locally
+## 🚀 Getting Started
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Gaurigotad/Travel-Recommendation-System
-   cd Travel-Recommendation-System
-🗂 Project Structure
-📁 Travel-Recommendation-System
-├── travel_app.py           # Main Streamlit app
-├── travel_dataset.csv      # Dataset of destinations
-├── recommendation_model.pkl # Pickled model (optional)
-├── requirements.txt        # Required Python packages
-└── README.md               # Project documentation
+### 1. Clone the Repository
+```bash
+git clone https://github.com/ShambhaviBorkar/Travel-Recommendation-System.git
+cd Travel-Recommendation-System
+```
+2. Install Dependencies
+Make sure you have Python 3.8+ and pip installed
 
+```bash
+pip install streamlit pandas numpy scikit-learn seaborn matplotlib
+```
+3. Run the App
+```bash
+streamlit run travel_app.py
+```
+📂 Project Structure
+```bash
+Travel-Recommendation-System/
+├── travel_app.py          # Main Streamlit app
+├── model.pkl              # Trained recommendation model
+├── destinations.csv       # Dataset used
+├── assets/                # Images and visuals
+└── README.md
+```
+📈 Future Improvements
+Add login and profile history
 
-📧 Contact
-Have any suggestions or want to contribute?
-📬 Reach out via [Gaurigotad](https://github.com/Gaurigotad)
+Integrate real-time weather and cost APIs
+
+Suggest travel packages or hotels
+
+Improve recommendation logic with collaborative filtering
+
+🙋‍♀️ Author
+Gauri Gotad
+GitHub: [@Gaurigotad](https://github.com/Gaurigotad)
+
+Shambhavi Borkar
+GitHub: [@ShambhaviBorkar](https://github.com/ShambhaviBorkar)
